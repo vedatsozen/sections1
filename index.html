@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITE 9</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="max-w-screen p-0">
+
+<nav class="fixed top-0 h-16 transparent shadow shadow-2xl w-screen flex justify-center items-center gap-10">
+    <a id="homelink" href="#">Home</a>
+    <a id="aboutuslink" href="#">About Us</a>
+    <a id="ourmissionlink" href="#">Our Mission</a>
+    <a id="contactuslink" href="#">Contact Us</a>
+</nav>
+
+<header id="home" class="h-screen w-full flex justify-center items-center">
+    <h1 class="text-6xl text-white">Here is Home</h1>
+</header>
+
+<section id="aboutussection" class="h-screen w-full flex justify-center items-center">
+    <h1 class="text-6xl text-white">Here is About Us Section</h1>
+</section>
+
+<section id="ourmissionsection" class="h-screen w-full flex justify-center items-center">
+    <h1 class="text-6xl text-white">Here is Our Mission Section</h1>
+</section>
+
+
+<section id="contactussection" class="h-screen w-full flex justify-center items-center">
+    <h1 class="text-6xl text-white">Here is Contact Us Section</h1>
+</section>
+
+<script>
+
+let homelink = document.getElementById("homelink");
+let home = document.getElementById("home");
+
+let aboutuslink = document.getElementById("aboutuslink");
+let aboutussection = document.getElementById("aboutussection");
+
+let ourmissionlink = document.getElementById("ourmissionlink");
+let ourmissionsection = document.getElementById("ourmissionsection");
+
+let contactuslink = document.getElementById("contactuslink");
+let contactussection = document.getElementById("contactussection");
+
+homelink.addEventListener("click", function() {
+home.style.display = "flex";
+ourmissionsection.style.display = "none";
+contactussection.style.display = "none";
+aboutussection.style.display = "none";
+
+});
+
+aboutuslink.addEventListener("click", function() {
+home.style.display = "none";
+ourmissionsection.style.display = "none";
+contactussection.style.display = "none";
+aboutussection.style.display = "flex";
+
+});
+
+ourmissionlink.addEventListener("click", function() {
+home.style.display = "none";
+ourmissionsection.style.display = "flex";
+contactussection.style.display = "none";
+aboutussection.style.display = "none";
+
+});
+
+contactuslink.addEventListener("click", function() {
+home.style.display = "none";
+ourmissionsection.style.display = "none";
+contactussection.style.display = "flex";
+aboutussection.style.display = "none";
+
+});
+
+</script>
+
+</body>
+</html>
